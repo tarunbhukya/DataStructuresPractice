@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
-lowa_data_set = "../kaggle/datasets/lowa.csv"
+lowa_data_set = "../kaggle_machine_learning/datasets/lowa.csv"
 dataframe = pd.read_csv(lowa_data_set)
 y = dataframe.SalePrice
 x = dataframe[['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']]

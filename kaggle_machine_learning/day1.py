@@ -4,7 +4,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 
-lowa_dataset_path = '../kaggle/datasets/lowa.csv'
+lowa_dataset_path = '../kaggle_machine_learning/datasets/lowa.csv'
 dataframe = pd.read_csv(lowa_dataset_path)
 y = dataframe.SalePrice
 x = dataframe[['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']]
